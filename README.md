@@ -9,7 +9,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   monto:
-    github: [your-github-name]/monto
+    github: isled/monto
 ```
 
 ## Usage
