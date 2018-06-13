@@ -1,0 +1,9 @@
+name: monto
+version: 0.1.0
+
+authors:
+  - monto <ymkwfn1688@qq.com>
+
+crystal: 0.24.2
+
+license: MIT
