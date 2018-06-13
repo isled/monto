@@ -1,7 +1,4 @@
 require "yaml"
-require "./logger"
-require "./logger_builder"
-require "./logging"
 module Monto::Environment
     class Settings
         alias SettingValue = String | Int32 | Bool | Nil
@@ -54,7 +51,7 @@ module Monto::Environment
             },
             database_url: {type: String, default: ""},
             host: {type: String, default: "localhost"},
-            name: {type: String, default: "Amber_App"},
+            name: {type: String, default: "monto_App"},
             port: {type: Int32, default: 3000},
             port_reuse: {type: Bool, default: true},
             process_count: {type: Int32, default: 1},
@@ -62,7 +59,7 @@ module Monto::Environment
             secret_key_base: {type: String, default: Random::Secure.urlsafe_base64(32)},
             secrets: {type: Hash(String, String)?, default: nil},
             session: {type: Hash(String, Int32 | String), default: {
-                "key" => "amber.session", "store" => "signed_cookie", "expires" => 0,
+                "key" => "monto.session", "store" => "signed_cookie", "expires" => 0,
             }},
             ssl_key_file: {type: String?, default: nil},
             ssl_cert_file: {type: String?, default: nil},
